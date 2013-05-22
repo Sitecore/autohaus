@@ -1,26 +1,23 @@
-autohaus
+*Autohaus
 ========
-
 An open source demo site for Sitecore 7
 
-Requirements:
+**Requirements:
 
 1.	Exact build of 7.0 rev. 130424.
 
 2.	Sitecore MVC disabled.
 	To do so, rename the extension of the Sitecore.Mvc* config files under App_Config/Include.
 	
-How to Install to site:
+**How to Install to site:
 
-1.  Get the latest .update file from /download and install it with /sitecore/admin/UpdateInstallationWizard.aspx.
+Simply get the latest .update file from /download and install it with /sitecore/admin/UpdateInstallationWizard.aspx.
 
-    The package will deploy tons of items in post-install, so it could take a while (5-10 minutes to finish).
-	Afterwards, it will kick off index rebuild of the master indexes.
-	No manual steps are required after the install.
+The package will deploy tons of items in post-install, so it could take a while (5-10 minutes to finish).
+Afterwards, it will kick off index rebuild of the master indexes.
+No manual steps are required after the install.
 
-How to build locally
-
-Requirements: TDS.
+**How to build locally
 
 After you get the sources:
 
@@ -40,10 +37,16 @@ After you get the sources:
 	Sitecore.Logging.dll
 	Sitecore.Update.dll
 	Sitecore.Zip.dll
+	
+2. Open the solution file.
 
-2. Tweak TDS settings for Debug configuration like the webroot path, etc.
+   If you use TDS, open Autohaus.sln. If you don't, use Autohaus.NoTDS.sln.
+   
+3. If you use TDS: tweak the TDS project settings for Debug configuration like the webroot path, etc.
 
-3. Hit Rebuild All.
+4. Hit Rebuild All.
+   If you do not use TDS, you will have to copy the project output to the install directory yourself.
+
 
 
 
