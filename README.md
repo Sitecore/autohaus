@@ -24,13 +24,15 @@
 2.	Sitecore MVC disabled.
 	To do so, rename the extension of the Sitecore.Mvc* config files under App_Config/Include.
 	
-<h2>How to Install to site</h2>
+<h2>How to install the site</h2>
 
 Simply get the latest .update file from /download and install it with /sitecore/admin/UpdateInstallationWizard.aspx.
 
 The package will deploy tons of items in post-install, so it could take a while (5-10 minutes to finish).
 Afterwards, it will kick off index rebuild of the master indexes.
 No manual steps are required after the install.
+
+<p><b>Important: </b>The site operates in Live Mode, meaning it's using the <i>master</i> database and <i>sitecore_master_index</i>.</p>
 
 <h2>How to build locally</h2>
 
