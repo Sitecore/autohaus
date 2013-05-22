@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>datajs</id>
+    <version>1.1.0</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://datajs.codeplex.com/license/</licenseUrl>
+    <projectUrl>http://datajs.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>datajs is a new cross-browser JavaScript library that enables data-centric web applications by leveraging modern protocols such as JSON and OData and HTML5-enabled browser features</description>
+    <releaseNotes />
+    <tags>javascript js HTML5 odata cache data DOM-storage local-storage indexeddb</tags>
+    <references />
+  </metadata>
+</package>
