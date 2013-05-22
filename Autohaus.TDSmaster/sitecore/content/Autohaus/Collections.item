@@ -1,0 +1,100 @@
+----item----
+version: 1
+id: {31B05B60-0F19-4902-A358-492957A5CF50}
+database: master
+path: /sitecore/content/Autohaus/Collections
+parent: {D70CBEED-6DCF-483F-978F-6FC3C8049512}
+name: Collections
+master: {00000000-0000-0000-0000-000000000000}
+template: {75D74A35-03AC-43EF-971A-716515505F1A}
+templatekey: Section
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 34
+
+Applications/16x16/folder2_red.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+34
+----version----
+language: en
+version: 1
+revision: 10af315a-6381-4954-87af-0b6928716e5a
+
+----field----
+field: {5D673C4B-7DD3-46E3-A0BD-AD5F1A9BD99C}
+name: Title
+key: title
+content-length: 18
+
+Browse collections
+----field----
+field: {973D6E37-7BF2-4E72-BD0B-DF37AE436531}
+name: Text
+key: text
+content-length: 114
+
+These collection pages are built using Linq. You can open each item in Page Editor and modify the Linq statements.
+----field----
+field: {CF434F27-2B6F-450D-B405-887DAB3D2F54}
+name: ShowInNavBar
+key: showinnavbar
+content-length: 1
+
+1
+----field----
+field: {776D5E57-7816-44E2-A31C-F4527642692F}
+name: Navigatable
+key: navigatable
+content-length: 1
+
+1
+----field----
+field: {B8DAFAD6-74F1-47B8-9965-E5789416EBA0}
+name: NavTitle
+key: navtitle
+content-length: 11
+
+Collections
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130424T143500
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+10af315a-6381-4954-87af-0b6928716e5a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130513T185827:635040683072490343
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

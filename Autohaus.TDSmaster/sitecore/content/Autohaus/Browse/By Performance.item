@@ -1,0 +1,118 @@
+----item----
+version: 1
+id: {F2F0C5B3-5F69-4097-BABF-B1E2C6B5FA30}
+database: master
+path: /sitecore/content/Autohaus/Browse/By Performance
+parent: {BCC786D7-5A72-46B5-9C48-D18F9987B140}
+name: By Performance
+master: {00000000-0000-0000-0000-000000000000}
+template: {D85C3C87-0FE9-436E-87CD-1BFDA2F44A9E}
+templatekey: ContentPage
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----field----
+field: {21F74F6E-42D4-42A2-A4B4-4CEFBCFBD2BB}
+name: __Facets
+key: __facets
+content-length: 233
+
+{53D4D918-45FE-4EF0-BB2E-26BA31A8C581}|{F6C8B05B-C246-4960-94B3-44B36C146202}|{A1D8837D-F3A0-4392-8D16-5A8DA220FF74}|{F54D31F6-9EA9-4018-8930-F6A6A90FB085}|{A6C6866A-FD9C-4A82-A934-2B70745EA28C}|{FAA14713-2BCD-4C31-9CED-3DDC709A542B}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 2628
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{D4B42617-7DE5-44F5-9381-81531A250D62}" p:before="r[@uid='{958C43C5-4E25-484A-818F-AF39B12CE145}']" s:ds="{0E5047AD-6878-432E-997D-371F24709940}" s:id="{3014BEAC-DC44-497F-B57B-62CB422C7A0A}" s:par="Title=Availability+in+US&amp;TrueLabel=Available&amp;FalseLabel=Unavailable&amp;DefaultLabel=Not+Selected&amp;CSS=btn-primary&amp;Span=span2" s:ph="/body/content/search-options" /><r uid="{8DCB2E36-A8CA-4F84-85F2-C75214568F01}" p:before="r[@uid='{47557FC4-C4A7-49CA-8E82-1FCFD7623E23}']" s:id="{14AA429A-DA9D-485E-8BEC-8A7B072B613A}" s:ph="content" /><r uid="{47557FC4-C4A7-49CA-8E82-1FCFD7623E23}" p:before="r[@uid='{612660FE-A46A-4CB1-A74C-5A513417E002}']" s:ds="{F7725F11-D491-4CD2-9537-8F78BE77FE62}" s:id="{4892BBBC-5614-460F-92F9-E4E2CE9361F1}" s:par="Title=Horsepower&amp;CSS&amp;Min=50&amp;Max=1000&amp;MinSelected=50&amp;MaxSelected=1000&amp;Step=10&amp;Span=span2&amp;Units=bhp" s:ph="/body/content/facets" /><r uid="{612660FE-A46A-4CB1-A74C-5A513417E002}" p:before="r[@uid='{D9934DA9-3D38-455A-A4D0-FD5E7A010FBA}']" s:ds="{36F5B6B5-5D5A-4253-8B81-1543230A3BEF}" s:id="{4892BBBC-5614-460F-92F9-E4E2CE9361F1}" s:par="Title=Zero+to+Sixty&amp;CSS&amp;Min=2&amp;Max=8&amp;MinSelected=2&amp;MaxSelected=8&amp;Step=0.1&amp;Span=span2&amp;Units=seconds" s:ph="/body/content/facets" /><r uid="{D9934DA9-3D38-455A-A4D0-FD5E7A010FBA}" p:before="r[@uid='{8E090970-3E64-457B-A087-9B8CE9996F4C}']" s:ds="{CA489A4B-F825-492A-A536-B0930A4365AC}" s:id="{4892BBBC-5614-460F-92F9-E4E2CE9361F1}" s:par="Title=Top+Speed&amp;CSS&amp;Min=100&amp;Max=400&amp;MinSelected=100&amp;MaxSelected=400&amp;Step=10&amp;Span=span2&amp;Units=km%2fh" s:ph="/body/content/facets" /><r uid="{8E090970-3E64-457B-A087-9B8CE9996F4C}" p:before="r[@uid='{6179B49D-F75F-4C93-9351-892022A91991}']" s:ds="{AA95B3BD-594D-4D4C-A8CA-CBE63A84E57C}" s:id="{4892BBBC-5614-460F-92F9-E4E2CE9361F1}" s:par="Title=Numer+of+Cylinders&amp;CSS&amp;Min=4&amp;Max=16&amp;MinSelected=4&amp;MaxSelected=16&amp;Step=1&amp;Span=span2&amp;Units=cylinders" s:ph="/body/content/facets" /><r uid="{6179B49D-F75F-4C93-9351-892022A91991}" p:before="r[@uid='{900306A3-82C4-44FF-AB33-10AF968014B3}']" s:ds="{A6C6866A-FD9C-4A82-A934-2B70745EA28C}" s:id="{B327E0E0-7241-498B-80AF-6A74E7888FD9}" s:par="Title=Engine+Type&amp;CSS&amp;Span=span2" s:ph="/body/content/facets" /><r uid="{900306A3-82C4-44FF-AB33-10AF968014B3}" s:ds="{A1D8837D-F3A0-4392-8D16-5A8DA220FF74}" s:id="{B327E0E0-7241-498B-80AF-6A74E7888FD9}" s:par="Title=Transmission&amp;CSS&amp;Span=span2" s:ph="/body/content/facets" /></d></r>
+----version----
+language: en
+version: 1
+revision: d728d33f-cad8-457d-bd6a-a7dda860a227
+
+----field----
+field: {5D673C4B-7DD3-46E3-A0BD-AD5F1A9BD99C}
+name: Title
+key: title
+content-length: 21
+
+Browse by Performance
+----field----
+field: {973D6E37-7BF2-4E72-BD0B-DF37AE436531}
+name: Text
+key: text
+content-length: 190
+
+<p>This page provides faceted search experience. Open this item using Page Editor and see how it is built. Every component is a configurable faceting control.</p>
+<p>
+<div><br />
+</div>
+</p>
+----field----
+field: {8AFAA9DF-BD16-43CC-99A2-06CFE10506F9}
+name: Abstract
+key: abstract
+content-length: 154
+
+<p>Build your own set of facets using Page Editor. You will be presented with an option to select an underlying facet, fill the options and that's it!</p>
+----field----
+field: {CF434F27-2B6F-450D-B405-887DAB3D2F54}
+name: ShowInNavBar
+key: showinnavbar
+content-length: 1
+
+1
+----field----
+field: {776D5E57-7816-44E2-A31C-F4527642692F}
+name: Navigatable
+key: navigatable
+content-length: 1
+
+1
+----field----
+field: {B8DAFAD6-74F1-47B8-9965-E5789416EBA0}
+name: NavTitle
+key: navtitle
+content-length: 21
+
+Browse by Performance
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20121214T153000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d728d33f-cad8-457d-bd6a-a7dda860a227
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130521T180328:635047562086402264
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
