@@ -73,10 +73,6 @@
       <HintPath>..\sc.lib\Sitecore.ContentSearch.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Sitecore.ContentSearch.Linq.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\sc.lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
@@ -349,10 +345,6 @@
     <ProjectReference Include="..\Autohaus.Data\Autohaus.Data.csproj">
       <Project>{ad4f2db4-c9a9-4f3c-85b7-6ffec4f65688}</Project>
       <Name>Autohaus.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PackageInstallPostProcessor\PackageInstallPostProcessor.csproj">
-      <Project>{569b9875-ede7-48a6-91c4-3e3197c7d555}</Project>
-      <Name>PackageInstallPostProcessor</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
