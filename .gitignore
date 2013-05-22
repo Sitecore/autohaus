@@ -112,5 +112,5 @@ IconCache/
 BuiltFiles*.txt
 
 #Autohaus
-sc.lib/
+sc.lib/*.dll
 
