@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <Site Server="autohaus.local.net" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Autohaus\controls\Facets\FacetedSearchHorizontal.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{14AA429A-DA9D-485E-8BEC-8A7B072B613A}</Item>
+    </File>
+    <File Include="Autohaus\controls\Facets\FacetDropdown.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{B327E0E0-7241-498B-80AF-6A74E7888FD9}</Item>
+    </File>
+    <File Include="Autohaus\controls\Facets\FacetDropdown.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\Facets\FacetDropdown.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\Facets\OrderBy.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{2C0FFC31-18CE-49BC-ABA5-EBD84AA58C4F}</Item>
+    </File>
+    <File Include="Autohaus\controls\Facets\OrderBy.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\Facets\OrderBy.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\Facets\FacetDateRange.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{BBF663D5-F543-44CF-9179-70380FD4D609}</Item>
+    </File>
+    <File Include="Autohaus\controls\Facets\FacetDateRange.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\Facets\FacetDateRange.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\Facets\FacetList.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{4F3572BE-F13B-4972-B85B-4D085D3E9C8B}</Item>
+    </File>
+    <File Include="Autohaus\controls\Facets\FacetList.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\Facets\FacetList.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\Facets\FacetedSearchVertical.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{97AAF8FE-A6A9-41B5-9E59-2A6F562343FF}</Item>
+    </File>
+    <File Include="Autohaus\controls\Facets\SearchBox.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{220570DE-2EA3-439D-82BC-7062C3829EAB}</Item>
+    </File>
+    <File Include="Autohaus\controls\Slideshow.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{9E787290-1C3F-4BB8-AEC0-B4A527FDE941}</Item>
+    </File>
+    <File Include="Autohaus\controls\Slideshow.ascx.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\Slideshow.ascx.designer.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+    <File Include="Autohaus\controls\SlideshowInfo.ascx" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+      <Item DatabaseName="master">{32865905-83AA-4681-A91E-76065056DA84}</Item>
+    </File>
+  </ItemGroup>
+</Project>

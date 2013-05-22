@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {D9DCFB79-836E-48E7-BD98-61C66D6F9BA6}
+database: master
+path: /sitecore/templates/Autohaus/_BasePage/__Standard Values
+parent: {3BBACAB4-2A67-450D-8E03-8C99EEC6A5BE}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {3BBACAB4-2A67-450D-8E03-8C99EEC6A5BE}
+templatekey: _BasePage
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 253
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DC9CF0D7-41BD-4B39-BBBD-F28D9191599E}"><r id="{52454F38-77B0-4E78-AB0A-ED7822657449}" ph="header" uid="{7F561ED1-6648-4FBD-8609-37B6367A93F3}" /></d></r>
+----version----
+language: en
+version: 1
+revision: d8590623-df6e-419d-bb26-0514d2c8d86b
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20121214T131559
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d8590623-df6e-419d-bb26-0514d2c8d86b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20121214T131854:634910879341663172
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

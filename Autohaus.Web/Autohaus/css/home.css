@@ -1,0 +1,254 @@
+﻿/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    /* The Magic */
+    background-size: cover;
+
+    /* This image will be displayed fullscreen */
+
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height: 100%;
+}
+
+body {
+    background-color: #000000;
+    /* Workaround for some mobile browsers */
+    min-height: 100%;
+    padding: 0;
+}
+
+.hero-unit {
+    background-color: transparent;
+    color: #ffffff;
+    padding-left: 0;
+}
+
+.hero-unit a {
+    color: red;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Home page slider
+   ========================================================================== */
+
+.container { position: relative; }
+
+ol, ul { list-style: none; }
+
+.cb-slideshow { left: -25px; }
+
+.cb-slideshow,
+.cb-slideshow:after {
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+.cb-slideshow:after {
+    background: transparent url(../img/pattern.png) repeat top left;
+    content: '';
+}
+
+.cb-slideshow li span {
+    -webkit-backface-visibility: hidden;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-size: cover;
+    color: transparent;
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+.cb-slideshow li div {
+    bottom: 30px;
+    color: #fff;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cb-slideshow li div h3 {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 240px;
+    line-height: 200px;
+    padding: 0;
+}
+
+/* Animation for the slideshow images */
+
+@-webkit-keyframes imageAnimation {
+    0% {
+        -webkit-animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    8% {
+        -webkit-animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    17% { opacity: 1 }
+
+    25% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+@-moz-keyframes imageAnimation {
+    0% {
+        -moz-animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    8% {
+        -moz-animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    17% { opacity: 1 }
+
+    25% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+@-o-keyframes imageAnimation {
+    0% {
+        -o-animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    8% {
+        -o-animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    17% { opacity: 1 }
+
+    25% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+@-ms-keyframes imageAnimation {
+    0% {
+        -ms-animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    8% {
+        -ms-animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    17% { opacity: 1 }
+
+    25% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+@keyframes imageAnimation {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    8% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    17% { opacity: 1 }
+
+    25% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+/* Animation for the title */
+
+@-webkit-keyframes titleAnimation {
+    0% { opacity: 0 }
+
+    8% { opacity: 1 }
+
+    17% { opacity: 1 }
+
+    19% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+@-moz-keyframes titleAnimation {
+    0% { opacity: 0 }
+
+    8% { opacity: 1 }
+
+    17% { opacity: 1 }
+
+    19% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+@-o-keyframes titleAnimation {
+    0% { opacity: 0 }
+
+    8% { opacity: 1 }
+
+    17% { opacity: 1 }
+
+    19% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+@-ms-keyframes titleAnimation {
+    0% { opacity: 0 }
+
+    8% { opacity: 1 }
+
+    17% { opacity: 1 }
+
+    19% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation {
+    0% { opacity: 0 }
+
+    8% { opacity: 1 }
+
+    17% { opacity: 1 }
+
+    19% { opacity: 0 }
+
+    100% { opacity: 0 }
+}
+
+/* Show at least something when animations not supported */
+
+.no-cssanimations .cb-slideshow li span { opacity: 1; }
+
+@media screen and (max-width: 1140px) {
+    .cb-slideshow li div h3 { font-size: 140px }
+}
+
+@media screen and (max-width: 600px) {
+    .cb-slideshow li div h3 { font-size: 80px }
+}

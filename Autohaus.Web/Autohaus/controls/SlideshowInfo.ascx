@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" %>
+<a href="#" class="getstarted" data-placement="left" data-toggle="popover" data-content="These slideshow images are loaded dynamically via a search query that is assigned on the data source of the Slideshow Sublayout on the /Home item." data-original-title="Slideshow Images"></a>

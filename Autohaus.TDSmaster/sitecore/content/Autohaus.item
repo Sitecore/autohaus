@@ -1,0 +1,110 @@
+----item----
+version: 1
+id: {D70CBEED-6DCF-483F-978F-6FC3C8049512}
+database: master
+path: /sitecore/content/Autohaus
+parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
+name: Autohaus
+master: {00000000-0000-0000-0000-000000000000}
+template: {32A0437E-8535-44DF-B9C7-AA7868FC9D63}
+templatekey: Home
+
+----field----
+field: {39C4902E-9960-4469-AEEF-E878E9C8218F}
+name: __Hidden
+key: __hidden
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 1285
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{4C4CAF11-BB9E-4438-A59F-7B2A62BE26C4}" p:before="r[@uid='{F8FAD07D-36C6-4BDA-831E-6071F0DEE3D1}']" s:id="{C0BC00FB-90C4-4D24-9573-431DE863953D}" s:ph="body" /><r uid="{F8FAD07D-36C6-4BDA-831E-6071F0DEE3D1}" p:before="r[@uid='{7F561ED1-6648-4FBD-8609-37B6367A93F3}']" s:id="{9F05ED6F-CE15-4EF6-99A5-8F51B172A1BC}" s:ph="navbar-right" /><r uid="{23DED496-7683-4B4E-B0CC-FC2DC4D0465C}"><p:d /></r><r uid="{71477254-75A1-443B-B80B-ABA0F8EDF24C}" p:before="r[@uid='{15F16580-DD4B-423C-A91A-16808F70C251}']" s:id="{32865905-83AA-4681-A91E-76065056DA84}" s:ph="content" /><r uid="{15F16580-DD4B-423C-A91A-16808F70C251}" p:before="r[@uid='{E6E61B8E-B507-4A0C-A3F1-A0538A57626A}']" s:ds="" s:id="{DDC5BCF4-100F-4947-829F-AD8FF916FF69}" s:par="css=%252fautohaus%252fcss%252fhome.css" s:ph="css" /><r uid="{E6E61B8E-B507-4A0C-A3F1-A0538A57626A}" p:before="r[@uid='{DB304BD9-3120-4FAF-AB78-8AC22B1E7141}']" s:ds="location:{1a7143ff-3286-4374-8265-fa4f675a1c72};" s:id="{9E787290-1C3F-4BB8-AEC0-B4A527FDE941}" s:par="" s:ph="home-top" /><r uid="{DB304BD9-3120-4FAF-AB78-8AC22B1E7141}" s:ds="" s:id="{DDC5BCF4-100F-4947-829F-AD8FF916FF69}" s:par="homejs=%252fautohaus%252fjs%252fhome.js" s:ph="js" /></d></r>
+----version----
+language: en
+version: 1
+revision: e6140223-2246-4048-92b1-5890662a23cf
+
+----field----
+field: {5D673C4B-7DD3-46E3-A0BD-AD5F1A9BD99C}
+name: Title
+key: title
+content-length: 8
+
+AUTOHAUS
+----field----
+field: {973D6E37-7BF2-4E72-BD0B-DF37AE436531}
+name: Text
+key: text
+content-length: 550
+
+<h2>A demo site built by developers for developers.</h2>
+<h3>Learn everything about Sitecore 7.</h3>
+<p>In meantime, explore the collection of your favorite car models and learn everything about them.</p>
+<p>Get started by checking out our <a href="~/link.aspx?_id=D9F2B30277CD4FAC810FB6E44B00D14D&amp;_z=z" class="getstarted" data-placement="bottom" data-toggle="popover" data-content="This is a marketing page with static URL and Car of the Day content loaded dynamically via data query" data-original-title="Car of the Day">Car of the Day.</a></p>
+----field----
+field: {CF434F27-2B6F-450D-B405-887DAB3D2F54}
+name: ShowInNavBar
+key: showinnavbar
+content-length: 1
+
+1
+----field----
+field: {776D5E57-7816-44E2-A31C-F4527642692F}
+name: Navigatable
+key: navigatable
+content-length: 1
+
+1
+----field----
+field: {B8DAFAD6-74F1-47B8-9965-E5789416EBA0}
+name: NavTitle
+key: navtitle
+content-length: 4
+
+Home
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20121213T163400
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e6140223-2246-4048-92b1-5890662a23cf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130521T122112:635047356727453035
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

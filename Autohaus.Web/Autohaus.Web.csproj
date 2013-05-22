@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3674D18-5D27-4CCB-BD2F-59BBB3F36FC7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Autohaus.Web</RootNamespace>
+    <AssemblyName>Autohaus.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\sc.lib\HtmlAgilityPack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Buckets">
+      <HintPath>..\sc.lib\Sitecore.Buckets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Buckets.Client">
+      <HintPath>..\sc.lib\Sitecore.Buckets.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Client">
+      <HintPath>..\sc.lib\Sitecore.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\sc.lib\Sitecore.ContentSearch.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\sc.lib\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.0\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autohaus\controllers\CarsController.cs" />
+    <Compile Include="Autohaus\controllers\CarSearchController.cs" />
+    <Compile Include="Autohaus\controllers\FacetController.cs" />
+    <Compile Include="Autohaus\controllers\ODataHelper.cs" />
+    <Compile Include="Autohaus\controllers\ODataSearchController.cs" />
+    <Compile Include="Autohaus\controllers\SearchController.cs" />
+    <Compile Include="Autohaus\controls\CarDetails.ascx.cs">
+      <DependentUpon>CarDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\CarDetails.ascx.designer.cs">
+      <DependentUpon>CarDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\DynamicQueryControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\DataQueryControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetBooleanDropdown.ascx.cs">
+      <DependentUpon>FacetBooleanDropdown.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetBooleanDropdown.ascx.designer.cs">
+      <DependentUpon>FacetBooleanDropdown.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetList.ascx.cs">
+      <DependentUpon>FacetList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetList.ascx.designer.cs">
+      <DependentUpon>FacetList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetDateRange.ascx.cs">
+      <DependentUpon>FacetDateRange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetDateRange.ascx.designer.cs">
+      <DependentUpon>FacetDateRange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetDropdown.ascx.cs">
+      <DependentUpon>FacetDropdown.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetDropdown.ascx.designer.cs">
+      <DependentUpon>FacetDropdown.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetSlider.ascx.cs">
+      <DependentUpon>FacetSlider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\FacetSlider.ascx.designer.cs">
+      <DependentUpon>FacetSlider.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\OrderBy.ascx.cs">
+      <DependentUpon>OrderBy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\OrderBy.ascx.designer.cs">
+      <DependentUpon>OrderBy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\DataQueryRenderer.ascx.cs">
+      <DependentUpon>DataQueryRenderer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\DataQueryRenderer.ascx.designer.cs">
+      <DependentUpon>DataQueryRenderer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\SearchBox.ascx.cs">
+      <DependentUpon>SearchBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Facets\SearchBox.ascx.designer.cs">
+      <DependentUpon>SearchBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\MainNav.ascx.cs">
+      <DependentUpon>MainNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\MainNav.ascx.designer.cs">
+      <DependentUpon>MainNav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\PageResourceRenderer.cs" />
+    <Compile Include="Autohaus\controls\InfoBar.ascx.cs">
+      <DependentUpon>InfoBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\InfoBar.ascx.designer.cs">
+      <DependentUpon>InfoBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\Search.ascx.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Search.ascx.designer.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Autohaus\controls\SitecoreUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Slideshow.ascx.cs">
+      <DependentUpon>Slideshow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autohaus\controls\Slideshow.ascx.designer.cs">
+      <DependentUpon>Slideshow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Autohaus\controls\CarDetails.ascx" />
+    <Content Include="Autohaus\controls\CollectionCode.ascx" />
+    <Content Include="Autohaus\controls\Facets\FacetSlider.ascx" />
+    <Content Include="Autohaus\controls\SlideshowInfo.ascx" />
+    <Content Include="Autohaus\controls\InfoBar.ascx" />
+    <Content Include="Autohaus\controls\Slideshow.ascx" />
+    <Content Include="Autohaus\controls\Search.ascx" />
+    <Content Include="Autohaus\controls\ThemeSelector.ascx" />
+    <Content Include="Autohaus\controls\Facets\AlertArea.ascx" />
+    <Content Include="Autohaus\controls\Facets\Results.ascx" />
+    <Content Include="Autohaus\controls\Facets\FacetedSearchHorizontal.ascx" />
+    <Content Include="Autohaus\controls\Facets\FacetedSearchVertical.ascx" />
+    <Content Include="Autohaus\controls\Facets\FacetList.ascx" />
+    <Content Include="Autohaus\controls\Facets\FacetBooleanDropdown.ascx" />
+    <Content Include="Autohaus\controls\Facets\FacetDateRange.ascx" />
+    <Content Include="Autohaus\controls\Facets\FacetDropdown.ascx" />
+    <Content Include="Autohaus\controls\Facets\OrderBy.ascx" />
+    <Content Include="Autohaus\controls\Facets\SearchBox.ascx" />
+    <Content Include="Autohaus\controls\DataQueryRenderer.ascx" />
+    <Content Include="Autohaus\controls\SearchBox.ascx" />
+    <Content Include="Autohaus\css\bootstrap-select.min.css" />
+    <Content Include="Autohaus\css\home.css" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Autohaus\css\custom-theme\images\ui-icons_f6cf3b_256x240.png" />
+    <Content Include="Autohaus\css\custom-theme\jquery-ui-1.10.0.custom.css" />
+    <Content Include="Autohaus\css\custom-theme\jquery-ui-1.9.2.custom.css" />
+    <Content Include="Autohaus\css\custom-theme\jquery.ui.1.10.0.ie.css" />
+    <Content Include="Autohaus\css\custom-theme\jquery.ui.1.9.2.ie.css" />
+    <Content Include="Autohaus\css\font-awesome.min.css" />
+    <Content Include="Autohaus\css\themes\amelia\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\cerulean\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\cosmo\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\cyborg\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\journal\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\readable\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\simplex\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\slate\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\spacelab\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\spruce\bootstrap.min.css" />
+    <Content Include="Autohaus\css\themes\superhero\bootstrap.min.css" />
+    <Content Include="Autohaus\css\ui-lightness\images\animated-overlay.gif" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Autohaus\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Autohaus\css\ui-lightness\jquery-ui-1.10.2.custom.css" />
+    <Content Include="Autohaus\css\ui-lightness\jquery-ui-1.10.2.custom.min.css" />
+    <Content Include="Autohaus\font\fontawesome-webfont.svg" />
+    <Content Include="Autohaus\img\pattern.png" />
+    <Content Include="Autohaus\img\carbon.png" />
+    <Content Include="Autohaus\js\home.js" />
+    <Content Include="Autohaus\js\vendor\bootstrap-select.min.js" />
+    <Content Include="Autohaus\css\prettify.css" />
+    <Content Include="Autohaus\Dialog.aspx" />
+    <Content Include="Autohaus\js\browse-interactive.js" />
+    <Content Include="Autohaus\js\vendor\jquery-1.9.1.js" />
+    <Content Include="Autohaus\js\vendor\jquery-ui-1.10.2.custom.js" />
+    <Content Include="Autohaus\js\vendor\jquery-ui-1.10.2.custom.min.js" />
+    <Content Include="Autohaus\js\vendor\jquery.ba-bbq.min.js" />
+    <Content Include="Autohaus\js\vendor\knockout-2.2.0.js" />
+    <Content Include="Autohaus\js\vendor\knockout.mapping-latest.js" />
+    <Content Include="Autohaus\js\vendor\lang-n.js" />
+    <Content Include="Autohaus\js\vendor\prettify.js" />
+    <Content Include="Autohaus\sublayouts\ContentPage.ascx" />
+    <Content Include="Autohaus\sublayouts\Home.ascx" />
+    <Content Include="Autohaus\sublayouts\Footer.ascx" />
+    <Content Include="Autohaus\sublayouts\NavBar.ascx" />
+    <Content Include="Autohaus\views\BasicCarView.ascx" />
+    <Content Include="Autohaus\views\CarSizeView.ascx" />
+    <Content Include="Autohaus\views\EngineTypeView.ascx" />
+    <Content Include="Autohaus\views\FuelEfficiencyView.ascx" />
+    <Content Include="Autohaus\controls\HeroText.ascx" />
+    <Content Include="Autohaus\views\PerformanceView.ascx" />
+    <Content Include="Autohaus\controls\MainNav.ascx" />
+    <Content Include="Autohaus\controls\TitleText.ascx" />
+    <Content Include="Autohaus\css\bootstrap-responsive.css" />
+    <Content Include="Autohaus\css\bootstrap-responsive.min.css" />
+    <Content Include="Autohaus\css\themes\default\bootstrap.min.css" />
+    <Content Include="Autohaus\css\site.css" />
+    <Content Include="Autohaus\img\glyphicons-halflings-white.png" />
+    <Content Include="Autohaus\img\glyphicons-halflings.png" />
+    <Content Include="Autohaus\js\main.js" />
+    <Content Include="Autohaus\js\vendor\bootstrap.js" />
+    <Content Include="Autohaus\js\vendor\bootstrap.min.js" />
+    <Content Include="Autohaus\js\vendor\jquery-1.8.3.js" />
+    <Content Include="Autohaus\js\vendor\jsrender.js" />
+    <Content Include="Autohaus\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="Autohaus\Main.aspx" />
+    <Content Include="Autohaus\js\vendor\datajs-1.1.0.js" />
+    <Content Include="Autohaus\js\vendor\datajs-1.1.0.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Autohaus.Custom\Autohaus.Custom.csproj">
+      <Project>{bd97b55d-d1fa-4c07-8794-e0af338f315d}</Project>
+      <Name>Autohaus.Custom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Autohaus.Data\Autohaus.Data.csproj">
+      <Project>{ad4f2db4-c9a9-4f3c-85b7-6ffec4f65688}</Project>
+      <Name>Autohaus.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PackageInstallPostProcessor\PackageInstallPostProcessor.csproj">
+      <Project>{569b9875-ede7-48a6-91c4-3e3197c7d555}</Project>
+      <Name>PackageInstallPostProcessor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\WWW.Autohaus.config">
+      <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Config\Include\WWW.Autohaus.CD.config">
+      <DependentUpon>WWW.Autohaus.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\WWW.Autohaus.CM.config">
+      <DependentUpon>WWW.Autohaus.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\WWW.Autohaus.Debug.config">
+      <DependentUpon>WWW.Autohaus.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_Config\Include\WWW.Autohaus.Demo.config">
+      <DependentUpon>WWW.Autohaus.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="App_Config\Include\WWW.Autohaus.Local.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <None Include="App_Config\Include\WWW.Autohaus.Local.CD.config">
+      <DependentUpon>WWW.Autohaus.Local.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\WWW.Autohaus.Local.CM.config">
+      <DependentUpon>WWW.Autohaus.Local.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\WWW.Autohaus.Local.Debug.config">
+      <DependentUpon>WWW.Autohaus.Local.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\WWW.Autohaus.Local.Demo.config">
+      <DependentUpon>WWW.Autohaus.Local.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\WWW.Autohaus.Local.Release.config">
+      <DependentUpon>WWW.Autohaus.Local.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\WWW.Autohaus.Release.config">
+      <DependentUpon>WWW.Autohaus.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Autohaus\font\fontawesome-webfont.eot" />
+    <Content Include="Autohaus\font\fontawesome-webfont.ttf" />
+    <Content Include="Autohaus\font\fontawesome-webfont.woff" />
+    <Content Include="Autohaus\font\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'CM|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'CD|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SlowCheetahTargets Condition=" '$(SlowCheetahTargets)'=='' ">$(LOCALAPPDATA)\Microsoft\MSBuild\SlowCheetah\v1\SlowCheetah.Transforms.targets</SlowCheetahTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Demo|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51248</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50550/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

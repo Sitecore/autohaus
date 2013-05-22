@@ -1,0 +1,133 @@
+----item----
+version: 1
+id: {D978A006-9E10-430A-89B2-7031ABF02675}
+database: master
+path: /sitecore/content/Autohaus/Collections/Most Efficient Cars
+parent: {31B05B60-0F19-4902-A358-492957A5CF50}
+name: Most Efficient Cars
+master: {00000000-0000-0000-0000-000000000000}
+template: {FF1FB49C-0E50-46D4-8905-B68F58270801}
+templatekey: Collection Page
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+900
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 277
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{2DF9B9F1-BD14-4231-820E-985B3A33F135}"><p:d /></r><r uid="{DBB07A9F-5714-4D4A-99A7-25AE9D984964}" s:ds="" s:id="{56744F26-F750-4DC5-B2C8-8E7DD79195C2}" s:par="" s:ph="content" /></d></r>
+----version----
+language: en
+version: 1
+revision: 9c1ef4d5-0c99-4822-8286-830151349e22
+
+----field----
+field: {79910F69-D83C-4AC5-B721-08F40B1C46CB}
+name: CollectionCode
+key: collectioncode
+content-length: 2607
+
+<p><span class="kwd">return</span><span class="pln"> context</span><span class="pun">.</span><span class="typ">GetQueryable</span><span class="pun">&lt;</span><span class="typ">Car</span><span class="pun">&gt;()</span><br />
+<span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">.</span><span class="typ">Where</span><span class="pun">(</span><span class="pln">i </span><span class="pun">=&gt;</span><span class="pln"> i</span><span class="pun">.</span><span class="pln">MileageHwy</span><span class="pun">.</span><span class="typ">Between</span><span class="pun">(</span><span class="lit">1.0f</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3.5f</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Inclusion</span><span class="pun">.</span><span class="typ">Both</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||</span><br />
+<span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i</span><span class="pun">.M</span><span class="pln">ileageCity</span><span class="pun">.</span><span class="typ">Between</span><span class="pun">(</span><span class="lit">1.0f</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5.0f</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Inclusion</span><span class="pun">.</span><span class="typ">Both</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||</span><br />
+<span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i</span><span class="pun">.M</span><span class="pln">ileageMixed</span><span class="pun">.</span><span class="typ">Between</span><span class="pun">(</span><span class="lit">1.0f</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4.0f</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Inclusion</span><span class="pun">.</span><span class="typ">Lower</span><span class="pun">))</span><br />
+<span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">.</span><span class="typ">OrderByDescending</span><span class="pun">(</span><span class="pln">i </span><span class="pun">=&gt;</span><span class="pln"> i</span><span class="pun">.M</span><span class="pln">anufactureDate</span><span class="pun">)</span><br />
+<span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">.</span><span class="typ">ToList</span><span class="pun">();</span></p>
+----field----
+field: {5D673C4B-7DD3-46E3-A0BD-AD5F1A9BD99C}
+name: Title
+key: title
+content-length: 12
+
+Fuel Sippers
+----field----
+field: {973D6E37-7BF2-4E72-BD0B-DF37AE436531}
+name: Text
+key: text
+content-length: 165
+
+<p>This page executes the following Linq query using .Between Linq extension on floats, and also performing descending ordering by the Manufacture Date property.</p>
+----field----
+field: {8AFAA9DF-BD16-43CC-99A2-06CFE10506F9}
+name: Abstract
+key: abstract
+content-length: 52
+
+<p>For the ones that hate spending money on gas.</p>
+----field----
+field: {CF434F27-2B6F-450D-B405-887DAB3D2F54}
+name: ShowInNavBar
+key: showinnavbar
+content-length: 1
+
+1
+----field----
+field: {776D5E57-7816-44E2-A31C-F4527642692F}
+name: Navigatable
+key: navigatable
+content-length: 1
+
+1
+----field----
+field: {B8DAFAD6-74F1-47B8-9965-E5789416EBA0}
+name: NavTitle
+key: navtitle
+content-length: 12
+
+Fuel Sippers
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 19
+
+Most Efficient Cars
+----field----
+field: {B8F42732-9CB8-478D-AE95-07E25345FB0F}
+name: __Hide version
+key: __hide version
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20121214T105200
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9c1ef4d5-0c99-4822-8286-830151349e22
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130521T171507:635047533072442517
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
