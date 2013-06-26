@@ -1,2 +1,23 @@
-# Custom for TDS/Sitecore serialization 
+# Custom for TDS/Sitecore serialization
 *.item -text
+
+# These files are text and should be normalized (convert crlf => lf)
+*.cs      text diff=csharp
+*.config  text
+*.aspx    text
+*.ascx    text
+*.css     text
+*.js      text
+*.xaml    text
+*.csproj  text
+*.sln     text
+*.tt      text
+*.ps1     text
+*.cmd     text
+*.msbuild text
+*.md      text
+
+# Images should be treated as binary
+# (binary is a macro for -text -diff)
+*.png     binary
+*.jpg     binary
