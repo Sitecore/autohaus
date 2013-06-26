@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {1BF439C1-56C8-4005-B6AA-7C87BFEE648F}
+database: master
+path: /sitecore/templates/Autohaus/CarModel/__Standard Values
+parent: {6FB79081-4D9E-413D-AE86-B855A5BDC65C}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {6FB79081-4D9E-413D-AE86-B855A5BDC65C}
+templatekey: CarModel
+
+----field----
+field: {C9283D9E-7C29-4419-9C28-5A5C8FF53E84}
+name: __Bucketable
+key: __bucketable
+content-length: 1
+
+1
+----field----
+field: {C0E276BB-8807-40AA-8138-E5C38B0C5DAB}
+name: __Quick Actions
+key: __quick actions
+content-length: 194
+
+{2B3E7BD2-B46D-4B64-86E4-3D42FA4F8EAA}|{0885D6A0-29ED-4551-ABA7-FC93EA73044F}|{409B7BC3-E0F0-4D86-9B7A-A82886925BFA}|{BDD029E4-5E8F-4ECE-A8E4-28A411A2AC01}|{32F344EE-3C38-4173-A0C4-7BE248A96C35}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 358
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{DC9CF0D7-41BD-4B39-BBBD-F28D9191599E}"><r id="{FEBA1282-65CC-4243-8BBD-77811D9EA428}" ph="body" uid="{7FE00B5A-C94B-4928-835A-A922B09374A5}" /><r id="{73098B12-1599-4755-AF3E-009D9A61A9DA}" ph="content" uid="{2A0993E8-C25A-47BD-947D-7C8CB7E4B875}" /></d></r>
+----version----
+language: en
+version: 1
+revision: c8bea204-eb67-45fd-a50b-7543d87d21ff
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20121213T153100
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c8bea204-eb67-45fd-a50b-7543d87d21ff
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130513T132731:635040484516903801
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

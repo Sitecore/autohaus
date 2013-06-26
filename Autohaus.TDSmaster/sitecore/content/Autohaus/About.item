@@ -1,0 +1,108 @@
+----item----
+version: 1
+id: {3133CF24-2C48-4007-9952-2476484BA1A0}
+database: master
+path: /sitecore/content/Autohaus/About
+parent: {D70CBEED-6DCF-483F-978F-6FC3C8049512}
+name: About
+master: {00000000-0000-0000-0000-000000000000}
+template: {D85C3C87-0FE9-436E-87CD-1BFDA2F44A9E}
+templatekey: ContentPage
+
+----version----
+language: en
+version: 1
+revision: f6898f2e-5573-4695-b064-02714b71b61f
+
+----field----
+field: {5D673C4B-7DD3-46E3-A0BD-AD5F1A9BD99C}
+name: Title
+key: title
+content-length: 14
+
+About Autohaus
+----field----
+field: {973D6E37-7BF2-4E72-BD0B-DF37AE436531}
+name: Text
+key: text
+content-length: 1011
+
+<h3>What to expect from this demo site:</h3>
+<ul>
+    <li>Learn how to leverage new Content Search API (Linq) from examples.</li>
+    <li>Learn how to build faceting experience.</li>
+    <li>Learn how to extend the new features in Sitecore 7.</li>
+    <li>Examples of how you can build a basic oData compatible service.</li>
+</ul>
+<h3>What you shouldn't expect from this demo site:</h3>
+<ul>
+    <li>Production quality code. Please avoid using the code from the samples on your production systems without thorough testing. This includes C#, JavaScript and CSS.</li>
+    <li>Polished front-end experience.</li>
+    <li>Remember - this is a demo site, so certain shortcuts had to be taken.</li>
+</ul>
+<h3>Current known issues:</h3>
+<ul>
+    <li>Server side paging does not act like it should for page &gt; 2.</li>
+    <li>Typeahead search acts funny.</li>
+</ul>
+<h3>How to report a bug:</h3>
+<ul>
+    <li>Go to <a href="http://github.com/sitecore/autohaus">GitHub</a> and submit an issue.</li>
+</ul>
+<p>Enjoy!</p>
+----field----
+field: {8AFAA9DF-BD16-43CC-99A2-06CFE10506F9}
+name: Abstract
+key: abstract
+content-length: 144
+
+<p>Here is a quick overview of what to expect and what not to expect from this demo site. Please read carefully in order to avoid confusion.</p>
+----field----
+field: {CF434F27-2B6F-450D-B405-887DAB3D2F54}
+name: ShowInNavBar
+key: showinnavbar
+content-length: 1
+
+1
+----field----
+field: {776D5E57-7816-44E2-A31C-F4527642692F}
+name: Navigatable
+key: navigatable
+content-length: 1
+
+1
+----field----
+field: {B8DAFAD6-74F1-47B8-9965-E5789416EBA0}
+name: NavTitle
+key: navtitle
+content-length: 5
+
+About
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20130511T142900
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f6898f2e-5573-4695-b064-02714b71b61f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130513T161645:635040586058316387
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
