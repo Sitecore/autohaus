@@ -10,9 +10,28 @@ namespace Autohaus.Custom.Indexing.Analyzers
     {
         public override TokenStream TokenStream(string fieldName, TextReader reader)
         {
-            var tokenizer = new StandardTokenizer(Version.LUCENE_30, reader);
-            var shingleMatrix = new ShingleMatrixFilter(tokenizer, 2, 8, ' ');
-            var lowerCaseFilter = new LowerCaseFilter(shingleMatrix);
+            // This should be a good tokenizer for most European-language documents:
+            // Splits words at punctuation characters, removing punctuation.
+            // Splits words at hyphens, unless there's a number in the token...
+            // Recognizes email addresses and internet hostnames as one token.
+            var intput = new StandardTokenizer(Version.LUCENE_30, reader);
+
+            // A ShingleMatrixFilter constructs shingles from a token stream.
+            // "2010 Audi RS5 Quattro Coupe" => "2010 Audi", "Audi RS5", "RS5 Quattro", "Quattro Coupe"
+            var shingleMatrixOutput = new ShingleMatrixFilter(
+                                                // stream from which to construct the matrix
+                                                intput,
+                                                // minimum number of tokens in any shingle
+                                                2,
+                                                // maximum number of tokens in any shingle.
+                                                8,
+                                                // character to use between texts of the token parts in a shingle.
+                                                ' ');
+
+            // Normalizes token text to lower case.
+            var lowerCaseFilter = new LowerCaseFilter(shingleMatrixOutput);
+
+            // Removes stop words from a token stream.
             return new StopFilter(true, lowerCaseFilter, StopAnalyzer.ENGLISH_STOP_WORDS_SET);
         }
     }
