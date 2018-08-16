@@ -65,7 +65,7 @@ After you get the sources:
 6. Afterwards, if you are using TDS, do Deploy (it may be disabled in the Debug configuration). If you do not use TDS, then you will have to copy the .item files from the TDS project folder to your local /serialization folder and perform Update Database operation.
 
 **Important**:
-Note that the the TDS project does not contain the car models, just the baseline items. In order to install the items, you will need to install the .update package from the /download folder first.
+Note that the TDS project does not contain the car models, just the baseline items. In order to install the items, you will need to install the .update package from the /download folder first.
 
 
 
